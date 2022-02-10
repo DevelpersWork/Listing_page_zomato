@@ -1,0 +1,226 @@
+<html>
+    <head>
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".card").mouseenter(function(){
+    $(this).css("border", "1px groove white");
+  });
+  $(".card").mouseleave(function(){
+    $(this).css("border", "0px groove white");
+  });
+});
+</script>
+      </head>
+    <body>
+        <div class="header">
+         <header>
+             <div id="icon">
+                 <h1>Food Corner</h1>
+             </div>
+             <div id="links">
+                 <span class="btn">Login</span>
+                 <span class="btn">Create an account</span>
+             </div>
+        </header>
+        </div>
+        <div class="maincontent">
+          <div id="filter">
+             <span style="font-weight: 600;">Filters</span><br>
+             <span>Select Location</span><br>
+             <input type="text" placeholder="select location"><br>
+             <span style="font-weight: 600;">cuisine</span><br>
+             <input type="checkbox" id="" name="" value="">North Indian<br>
+             <input type="checkbox" id="" name="" value="">South Indian<br>
+             <input type="checkbox" id="" name="" value="">Fast Food<br>
+             <input type="checkbox" id="" name="" value="">Street Food<br>
+             <input type="checkbox" id="" name="" value="">chinese<br>
+             <span style="font-weight: 600;">Price</span><br>
+             <input type="radio" id="html" name="fav_language" value="HTML">Under &#8360; 500<br>
+             <input type="radio" id="" name="" value=""> &#8360; 500 -  &#8360; 1000<br>
+             <input type="radio" id="" name="" value="">&#8360; 1000 -  &#8360; 2000<br>
+             <input type="radio" id="" name="" value="">&#8360; 2000 -  &#8360; 5000<br>
+             <input type="radio" id="" name="" value="">&#8360; 5000 & above<br>
+             <span style="font-weight: 600;">Avg. Customer Review</span><br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span> & up<br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star "></span> & up<br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star "></span> & up<br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star "></span> & up
+          </div>
+          <div id="cards">
+              <div class="card" >
+                  <div class="imgDiv">
+                    <img src="images/mah_thali.jpg"/>
+                  </div>
+                  <div class="contentDiv">
+                    <span class="heading">Maharashtrian Thali</span><br>
+                    <span>Patil Wada</span><br><br>
+                    <span class="fa fa-star " ></span>--&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 45 MIN &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8360; 1250 for two
+                    <hr>
+                    <span>40% OFF | USE OFFER-CODE</span>
+                    <hr>
+                    <button class="view">VIEW</button>
+                    <button class="order">ORDER</button> 
+                </div>
+              </div>
+              <div class="card">
+                <div class="imgDiv">
+                  <img src="images/pizza.jpg"/>
+                </div>
+                <div class="contentDiv">
+                  <span class="heading">Pizza</span><br>
+                  <span>American Fast Food</span><br><br>
+                  <span class="fa fa-star " ></span>--&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 45 MIN &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8360; 500 per
+                  <hr>
+                  <span>40% OFF | USE OFFER-CODE</span>
+                  <hr>
+                  <button class="view">VIEW</button>
+                  <button class="order">ORDER</button> 
+              </div>
+            </div>
+            <div class="card">
+                <div class="imgDiv">
+                  <img src="images/thali_s_indian.jpg"/>
+                </div>
+                <div class="contentDiv">
+                  <span class="heading">South Indian Thali</span><br>
+                  <span>South Corner</span><br><br>
+                  <span class="fa fa-star " ></span>--&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 45 MIN &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8360; 1000 for two
+                  <hr>
+                  <span>40% OFF | USE OFFER-CODE</span>
+                  <hr>
+                  <button class="view">VIEW</button>
+                  <button class="order">ORDER</button> 
+              </div>
+            </div>
+            <div class="card">
+                <div class="imgDiv">
+                  <img src="images/biryani.jpg"/>
+                </div>
+                <div class="contentDiv">
+                  <span class="heading">Shahi Haidrabadi Biryani</span><br>
+                    <span>Biryani,Beverages</span><br><br>
+                    <span class="fa fa-star " ></span>--&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 45 MIN &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8360; 300 for two
+                    <hr>
+                    <span>40% OFF | USE OFFER-CODE</span>
+                    <hr>
+                    <button class="view">VIEW</button>
+                    <button class="order">ORDER</button>
+                  </div>
+            </div>
+            <div class="card">
+                <div class="imgDiv">
+                  <img src="images/idli.jpg"/>
+                </div>
+                <div class="contentDiv">
+                  <span class="heading">Idli</span><br>
+                  <span>South Indian Corner</span><br><br>
+                  <span class="fa fa-star " ></span>--&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 45 MIN &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8360; 120 for two
+                  <hr>
+                  <span>40% OFF | USE OFFER-CODE</span>
+                  <hr>
+                  <button class="view">VIEW</button>
+                  <button class="order">ORDER</button>    
+              </div>
+            </div>
+            <div class="card">
+                <div class="imgDiv">
+                  <img src="images/pawbhaji.jpg"/>
+                </div>
+                <div class="contentDiv">
+                  <span class="heading">Special Paw Bhaji</span><br>
+                  <span>Sneha's Corner</span><br><br>
+                  <span class="fa fa-star " ></span>--&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 45 MIN &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8360; 300 for two
+                  <hr>
+                  <span>40% OFF | USE OFFER-CODE</span>
+                  <hr>
+                  <button class="view">VIEW</button>
+                  <button class="order">ORDER</button> 
+              </div>
+            </div>
+            <div class="card">
+                <div class="imgDiv">
+                  <img src="images/jamun.jpg"/>
+                </div>
+                <div class="contentDiv">
+                  <span class="heading">Gulab Jamun</span><br>
+                    <span>Nikita Veg</span><br><br>
+                    <span class="fa fa-star " ></span>--&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 45 MIN &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8360; 100 for two
+                    <hr>
+                    <span>40% OFF | USE OFFER-CODE</span>
+                    <hr>
+                    <button class="view">VIEW</button>
+                    <button class="order">ORDER</button>  
+              </div>
+            </div>
+            <div class="card">
+                <div class="imgDiv">
+                  <img src="images/pulaw.jpg"/>
+                </div>
+                <div class="contentDiv">
+                  <span class="heading">Shahi Pulaw </span><br>
+                  <span>North Indian</span><br><br>
+                  <span class="fa fa-star " ></span>--&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 45 MIN &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#8360; 120 for two
+                  <hr>
+                  <span>40% OFF | USE OFFER-CODE</span>
+                  <hr>
+                  <button class="view">VIEW</button>
+                  <button class="order">ORDER</button> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+            <footer>
+              <div class="foot1">
+                <span class='heading'>Get to know us</span>
+                <ul>
+                  <li>About Us</li>
+                  <li>Career</li>
+                  <li>Services</li>
+                  <li>Partners</li>
+                </ul>
+              </div>
+              <div class="foot2">
+                <span class='heading'>Contact Us</span>
+                <address>
+                  C/O<a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+                  Visit us at:<br>
+                  Example.com<br>
+                  Box 564, Disneyland<br>
+                  USA
+                  </address>
+                </div>
+              <div class="foot3">
+            <p class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30278.212493894793!2d73.82485824250894!3d18.44845140718004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2953ac44c7ddf%3A0x737faa6b90930b51!2sAmbegaon%20BK%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1642517198986!5m2!1sen!2sin"  allowfullscreen="" loading="lazy"></iframe>
+           </p>
+              </div>
+              <center>
+                <h3>&copy; Food Corner</h3>
+            </center>
+
+            </footer>
+        </div>
+        
+    </body>
+</html>
+
